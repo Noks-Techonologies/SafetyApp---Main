@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Create Account - SafetyApp</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="icon" href="/pictures/Copilot_20251014_175925.png" type="image/png"/>
+    </head>
+    <body>
+        <div id="RegisterationForm">
+            <div class="dashboard-card">
+                <img src="pictures/Copilot_20251014_175925.png" alt="logo" class="logo-img">
+                <h2>Create Your Account</h2>
+                
+                <!-- Error message div -->
+                <div id="signinError" style="display: none;">
+                    <i class="fas fa-exclamation-circle"></i> 
+                    <span id="errorText"></span>
+                </div>
+
+                <form id="signinForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" minlength="2" maxlength="50" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" minlength="6" placeholder="Create a strong password" required>
+                        <small>Password must contain at least one uppercase letter, one lowercase letter, and one number</small>
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" minlength="6" placeholder="Confirm your password" required>
+                    </div>
+                
+                    <button type="submit" class="register-btn">Create Account</button>
+                
+                    <div class="form-links">
+                        <p>Already have an account? <a href="login.html">Log in</a></p>
+                        <a href="index.html" class="home-link">← Back to Home</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Notification -->
+        <div id="notification" class="notification" style="display: none;">
+            <div class="notification-content">
+                <span class="notification-message"></span>
+                <button class="notification-close">&times;</button>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+        <script type="module" src="signin.js"></script>
+    </body>
+</html>

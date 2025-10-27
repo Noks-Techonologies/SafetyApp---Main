@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login - SafetyApp</title>
+        <link rel="stylesheet" href="style2.css">
+        <link rel="icon" href="/pictures/Copilot_20251014_175925.png" type="image/png" />
+    </head>
+    <body>
+        <div id="LoginForm">
+            <div class="dashboard-card">  
+                <img src="pictures/Copilot_20251014_175925.png" alt="logo" class="logo-img">
+                <h2>Login to Your Account</h2>
+                
+                <!-- Error message div -->
+                <div id="loginError" style="display: none;">
+                    <i class="fas fa-exclamation-circle"></i> 
+                    <span id="errorText"></span>
+                </div>
+
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+
+                    <div style="text-align: right; margin-bottom: 20px;">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                
+                    <button type="submit" class="login-btn">Log In</button>
+                
+                    <div class="form-links">
+                        <p>Don't have an account? <a href="signin.html">Create an account</a></p>
+                        <a href="index.html" class="home-link">← Back to Home</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Notification -->
+        <div id="notification" class="notification" style="display: none;">
+            <div class="notification-content">
+                <span class="notification-message"></span>
+                <button class="notification-close">&times;</button>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+        <script type="module" src="login.js"></script>
+    </body>
+</html>
