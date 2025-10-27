@@ -1,5 +1,5 @@
 // API Service - Handles all backend communication
-const API_URL = 'https://safe-app-backend-p8rf.onrender.com://localhost:5000/api';
+const API_URL = 'https://safe-app-backend-p8rf.onrender.com:/api';
 
 // Get token from localStorage
 const getToken = () => localStorage.getItem('authToken');
