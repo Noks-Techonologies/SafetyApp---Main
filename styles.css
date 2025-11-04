@@ -60,7 +60,6 @@ body {
 /* Modern Header */
 .header {
   background: var(--background-card);
-  backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   position: sticky;
   top: 0;
@@ -123,7 +122,6 @@ body {
 /* Modern Navigation */
 .nav {
   background: var(--background-card);
-  backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -548,7 +546,6 @@ btn::before {
 /* Form Styles */
 .report-form {
   background: var(--background-card);
-  backdrop-filter: blur(10px);
   padding: 40px;
   border-radius: var(--border-radius-xl);
   box-shadow: var(--shadow-lg);
@@ -945,7 +942,7 @@ btn::before {
   
   .nav {
     display: none;
-    position: absolute;
+    position: absolute top;
     top: 100%;
     left: 0;
     right: 0;
@@ -959,6 +956,7 @@ btn::before {
   
   .nav-list {
     flex-direction: column;
+    align-items: absolute right;
   }
   
   .nav-link {
@@ -1135,7 +1133,7 @@ btn::before {
 ================================== */
 
 #tracker {
-  background: powderblue;
+  background: white-;
   padding: 2rem 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
@@ -1147,7 +1145,7 @@ btn::before {
   background: blue;
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 18px rgba(253, 243, 243, 0.08);
 }
 
 .tracker-container:hover{
@@ -1275,4 +1273,60 @@ btn::before {
 .status-dot.active {
   background: #22c55e;
   animation: pulse 1.5s infinite ease-in-out;
+}
+
+.containers{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box ;
+}
+
+.content{
+  text-align: center;
+}
+
+.containers h1{
+  font-size: 95px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+
+.content a{
+  font-size: 23px;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  padding: 5px 25px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.content a:hover{
+  background-color: transparent;
+  color: #000000;
+}
+
+.background-image{
+  position: absolute center;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-radio:16/9){
+  .background-image{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media(max-aspect-rati0){
+  .background-image{
+    width: auto;
+    height: 100%;
+  }
 }
